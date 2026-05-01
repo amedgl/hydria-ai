@@ -69,8 +69,8 @@
 ### 1. Install THC-Hydra
 
 ```bash
-sudo apt update && sudo apt install hydra -y
-hydra -h   # Verify installation
+sudo apt update && sudo apt install hydria-ai -y
+hydria-ai -h   # Verify installation
 ```
 
 ### 2. Install Go Dependencies
