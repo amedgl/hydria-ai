@@ -66,11 +66,11 @@
 - THC-Hydra
 - Gemini API Key ([get it free](https://aistudio.google.com))
 
-### 1. Install THC-Hydra
+### 1. Clone the Repository
 
 ```bash
-sudo apt update && sudo apt install hydria-ai -y
-hydria-ai -h   # Verify installation
+git clone https://github.com/amedgl/hydria-ai.git
+cd hydria-ai
 ```
 
 ### 2. Install Go Dependencies
