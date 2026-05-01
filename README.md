@@ -284,7 +284,7 @@ Every attack is saved as a **session** and can be resumed at any point:
 
 | Error | Solution |
 |-------|----------|
-| `hydra: command not found` | Run `sudo apt install hydra` |
+| `hydra: command not found` | Run `sudo apt install hydria-ai` |
 | `GEMINI_API_KEY not found` | Add your key to the `.env` file |
 | `Unsupported image format` | Use `.jpg`, `.png`, or `.webp` |
 | `Gemini returned invalid JSON` | Retry or try a different image |
