@@ -1,0 +1,20 @@
+gemini:
+  model: gemini-2.0-flash     # or gemini-1.5-pro for deeper analysis
+  max_tokens: 8192
+
+wordlist:
+  max_size: 50000             # Maximum number of passwords to generate
+  min_length: 4               # Minimum password length
+  max_length: 20              # Maximum password length
+  include_leet: true          # Enable leet speak variations
+  include_reverse: true       # Enable reversed word variations
+  include_combinations: true  # Enable word combination variations
+
+hydra:
+  threads: 4                  # Number of parallel threads
+  timeout: 30                 # Connection timeout in seconds
+  batch_size: 50              # Passwords per Hydra invocation
+
+session:
+  auto_resume: true           # Automatically offer to resume paused sessions
+  save_interval: 10           # Write to SQLite every N attempts
