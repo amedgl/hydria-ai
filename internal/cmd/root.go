@@ -52,7 +52,7 @@ func init() {
 	f.StringVarP(&flags.Username, "username", "u", "", "Username")
 	f.IntVarP(&flags.Port, "port", "p", 0, "Port (optional)")
 	f.StringVar(&flags.APIKey, "api-key", "", "Gemini API key (.env default)")
-	f.StringVar(&flags.Model, "model", "", "Gemini model (default: gemini-2.0-flash)")
+	f.StringVar(&flags.Model, "model", "", "Gemini model (default: gemini-flash-latest)")
 	f.StringVar(&flags.SessionID, "session", "", "Session ID to resume")
 	f.IntVar(&flags.Threads, "threads", 0, "Parallel threads (default: 4)")
 	f.IntVar(&flags.BatchSize, "batch-size", 0, "Passwords per batch (default: 50)")
