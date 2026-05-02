@@ -77,8 +77,8 @@ Modern LLMs are equipped with strict safety filters that block requests related 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/amedgl/hydria-ai.git
-cd hydria-ai
+git clone https://github.com/amedgl/hydria-wordlist-ai.git
+cd hydria-wordlist-ai
 ```
 
 ### 2. Install Go Dependencies
