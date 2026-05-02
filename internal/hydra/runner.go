@@ -16,7 +16,7 @@ import (
 
 // foundPattern matches a successful Hydra output line.
 var foundPattern = regexp.MustCompile(
-	`(?i)\[\d+\]\[[\w\-]+\]\s+host:\s+(\S+)\s+login:\s+(\S+)\s+password:\s+(\S+)`,
+	`(?i)(?:\[\d+\])?\[[\w\-]+\]\s+host:\s+(\S+)\s+login:\s+(\S+)\s+password:\s+(.+)`,
 )
 
 // IsInstalled checks whether the hydra binary is available on PATH.
