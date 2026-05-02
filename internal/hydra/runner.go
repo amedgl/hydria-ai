@@ -14,9 +14,9 @@ import (
 	"github.com/hydria-ai/hydria/internal/tracker"
 )
 
-// foundPattern matches a successful Hydra output line.
+// foundPattern matches a successful Hydra output line, ignoring ANSI color codes.
 var foundPattern = regexp.MustCompile(
-	`(?i)(?:\[\d+\])?\[[\w\-]+\]\s+host:\s+(\S+)\s+login:\s+(\S+)\s+password:\s+(.+)`,
+	`(?i)host:\s+(\S+).*?login:\s+(\S+).*?password:\s+([^\x1b\n\r]+)`,
 )
 
 // IsInstalled checks whether the hydra binary is available on PATH.
